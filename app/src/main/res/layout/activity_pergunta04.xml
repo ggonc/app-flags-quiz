@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta04">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="60dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="@string/textPerguntaPais"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textNumeroPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contador"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <ImageView
+            android:id="@+id/imgBandeira"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/china" />
+
+        <RadioGroup
+            android:id="@+id/rgpAlternativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <RadioButton
+                android:id="@+id/rbtAlternativa1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtPais10"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbtAlternativa2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtPais2"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbtAlternativa3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtPais7"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbtAlternativa4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtPais4"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnResponder"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="responder"
+            android:text="@string/buttonResponder"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
